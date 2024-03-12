@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.popup {
+  animation: scale 100ms ease-in;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.profileDetails-mobile {
+  margin-left: 7rem;
+}
+
+.myPost:hover .overlay {
+  display: inline-flex;
+}
+
+@media (max-width: 639px) {
+  .bottom-tab {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 10px;
+    border-top: 1px solid rgb(226, 223, 223);
+  }
+
+  .story-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .userFollowership-mobile {
+    height: 60px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 360px) {
+  .back-btn {
+    margin-left: -0.8rem;
+  }
+  .mobile-padding {
+    padding: 1rem 20px;
+  }
+  .mobile-search-container input {
+    width: 150px;
+    margin-left: -0.1rem;
+  }
+
+  .comment-mobile {
+    margin: 2rem 0.5rem;
+  }
+  .comment-mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .user-image-mobile {
+    margin-left: -0.6rem;
+  }
+}
