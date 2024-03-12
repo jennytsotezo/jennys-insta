@@ -47,7 +47,7 @@ function Login() {
     <div className="lg:mt-[10vh] ml-[1rem] mt-[3rem]">
       <div>
         <h1 className="font-bold text-[18px] lg:text-[2rem] mb-[1.5rem]">
-          Welcome to JoelsInsta
+          Welcome to JennysInsta
         </h1>
         <Button
           style={{
